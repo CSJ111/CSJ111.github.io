@@ -96,17 +96,18 @@
 
 
 
-  <meta name="description" content="Nothing much">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="算法：扩展欧几里得">
+<meta name="keywords" content="算法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法：扩展欧几里得">
+<meta property="og:url" content="http://yoursite.com/2019/04/12/算法：扩展欧几里得/index.html">
 <meta property="og:site_name" content="Code for more">
-<meta property="og:description" content="Nothing much">
+<meta property="og:description" content="算法：扩展欧几里得">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-03T06:19:14.000Z">
+<meta property="og:updated_time" content="2019-04-12T02:59:31.284Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="Nothing much">
+<meta name="twitter:title" content="算法：扩展欧几里得">
+<meta name="twitter:description" content="算法：扩展欧几里得">
 
 
 
@@ -114,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/tags/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/12/算法：扩展欧几里得/">
 
 
 
@@ -124,7 +125,7 @@
   };
 </script>
 
-  <title>tags | Code for more</title>
+  <title>算法：扩展欧几里得 | Code for more</title>
   
 
 
@@ -231,7 +232,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -287,25 +288,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -332,76 +314,181 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/12/算法：扩展欧几里得/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CSJ111">
+      <meta itemprop="description" content="Nothing much">
+      <meta itemprop="image" content="/images/87026.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Code for more">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">tags
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
+          <h1 class="post-title" itemprop="name headline">算法：扩展欧几里得
+
               
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              目前共计 5 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              
-                <a href="/tags/摸泥赛/" style="font-size: 24px; color: #4f4f4f">摸泥赛</a> <a href="/tags/数据结构/" style="font-size: 12px; color: #ccc">数据结构</a> <a href="/tags/杂项/" style="font-size: 12px; color: #ccc">杂项</a> <a href="/tags/算法/" style="font-size: 18px; color: #8e8e8e">算法</a> <a href="/tags/题解/" style="font-size: 30px; color: #111">题解</a>
-              
-            </div>
-          </div>
+            
+          </h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-12 10:58:36 / 修改时间：10:59:31" itemprop="dateCreated datePublished" datetime="2019-04-12T10:58:36+08:00">2019-04-12</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="算法：扩展欧几里得"><a href="#算法：扩展欧几里得" class="headerlink" title="算法：扩展欧几里得"></a>算法：扩展欧几里得</h1><a id="more"></a>
+<p>首先我们明确一下，扩欧可以用来求类$ax+by=c$ 形式的不定方程。</p>
+<p>然后对于 $gcd(a,b)$  ，有任何非零系数$t1,t2,t3$ ，满足$t1a+t2b=t3gcd(a,b)$ </p>
+<p>那么很明显如果$c$ 是$gcd(a,b)$ 的倍数的话，这个方程是肯定有解的</p>
+<p>得到这个结论后，我们就可以开始思考怎么得到答案</p>
+<p>因为$gcd(a,b)=gcd(b,a\% b) $ 所以我们得到</p>
+<script type="math/tex; mode=display">
+bx+(a\%b)y=c</script><p>变形后的式子也是满足gcd的性质的，也就是说我们还可以变形得到</p>
+<script type="math/tex; mode=display">
+(a\%b)x+(b\%(a\%))y=c</script><p>这个式子就是求GCD的式子，也就是说我们可以这样一直递归下去，直到b为0时，y被消去，得解$x=1$ </p>
+<p>然后递归向上求解的时候，我们就可以又模运算逆向求解得x,y;</p>
+<p>即$k=x,x=y,y=k-a/b*y$ 这个就是对于递归下去的时候再向上求出解</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">exgcd</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!b)</span><br><span class="line">	&#123;</span><br><span class="line">		g=a;</span><br><span class="line">		x=<span class="number">1</span>;</span><br><span class="line">		b=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	exgcd(b,a%b);</span><br><span class="line">	<span class="keyword">int</span> k=x;</span><br><span class="line">	x=y;</span><br><span class="line">	y=k-a/b*y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/11/4-10T2-P2151-SDOI2009-HH去散步/" rel="next" title="4.10T2&&P2151 [SDOI2009]HH去散步 ">
+                <i class="fa fa-chevron-left"></i> 4.10T2&&P2151 [SDOI2009]HH去散步 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -430,8 +517,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -504,6 +600,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#算法：扩展欧几里得"><span class="nav-number">1.</span> <span class="nav-text">算法：扩展欧几里得</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -713,6 +826,46 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
