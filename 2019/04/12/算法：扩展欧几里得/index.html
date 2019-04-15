@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="Code for more">
 <meta property="og:description" content="算法：扩展欧几里得">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-12T02:59:31.284Z">
+<meta property="og:updated_time" content="2019-04-15T00:07:06.265Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法：扩展欧几里得">
 <meta name="twitter:description" content="算法：扩展欧几里得">
@@ -371,12 +371,24 @@
                 
               
 
-              <time title="创建时间：2019-04-12 10:58:36 / 修改时间：10:59:31" itemprop="dateCreated datePublished" datetime="2019-04-12T10:58:36+08:00">2019-04-12</time>
+              <time title="创建时间：2019-04-12 10:58:36" itemprop="dateCreated datePublished" datetime="2019-04-12T10:58:36+08:00">2019-04-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-15 08:07:06" itemprop="dateModified" datetime="2019-04-15T08:07:06+08:00">2019-04-15</time>
               
             
           </span>
@@ -426,7 +438,7 @@
 <script type="math/tex; mode=display">
 bx+(a\%b)y=c</script><p>变形后的式子也是满足gcd的性质的，也就是说我们还可以变形得到</p>
 <script type="math/tex; mode=display">
-(a\%b)x+(b\%(a\%))y=c</script><p>这个式子就是求GCD的式子，也就是说我们可以这样一直递归下去，直到b为0时，y被消去，得解$x=1$ </p>
+(a\%b)x+(b\%(a\%b))y=c</script><p>这个式子就是求GCD的式子，也就是说我们可以这样一直递归下去，直到b为0时，y被消去，得解$x=1$ </p>
 <p>然后递归向上求解的时候，我们就可以又模运算逆向求解得x,y;</p>
 <p>即$k=x,x=y,y=k-a/b*y$ 这个就是对于递归下去的时候再向上求出解</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">exgcd</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(!b)</span><br><span class="line">	&#123;</span><br><span class="line">		g=a;</span><br><span class="line">		x=<span class="number">1</span>;</span><br><span class="line">		b=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	exgcd(b,a%b);</span><br><span class="line">	<span class="keyword">int</span> k=x;</span><br><span class="line">	x=y;</span><br><span class="line">	y=k-a/b*y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
