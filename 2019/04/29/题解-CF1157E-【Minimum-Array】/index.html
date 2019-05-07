@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="读优输优">
-<meta name="keywords" content="杂项">
+  <meta name="description" content="题目描述 给定两个长度为n的序列a和b，可以对b进行任意顺序变换，得到序列c. 对于序列c，ci=(ai+bi)%n 求得字典序最小的c序列方案。">
+<meta name="keywords" content="题解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IO">
-<meta property="og:url" content="http://yoursite.com/2019/04/03/IO/index.html">
+<meta property="og:title" content="题解 CF1157E 【Minimum Array】">
+<meta property="og:url" content="http://yoursite.com/2019/04/29/题解-CF1157E-【Minimum-Array】/index.html">
 <meta property="og:site_name" content="Code for more">
-<meta property="og:description" content="读优输优">
+<meta property="og:description" content="题目描述 给定两个长度为n的序列a和b，可以对b进行任意顺序变换，得到序列c. 对于序列c，ci=(ai+bi)%n 求得字典序最小的c序列方案。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-07T06:55:15.797Z">
+<meta property="og:updated_time" content="2019-04-28T23:28:47.708Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IO">
-<meta name="twitter:description" content="读优输优">
+<meta name="twitter:title" content="题解 CF1157E 【Minimum Array】">
+<meta name="twitter:description" content="题目描述 给定两个长度为n的序列a和b，可以对b进行任意顺序变换，得到序列c. 对于序列c，ci=(ai+bi)%n 求得字典序最小的c序列方案。">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/03/IO/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/29/题解-CF1157E-【Minimum-Array】/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>IO | Code for more</title>
+  <title>题解 CF1157E 【Minimum Array】 | Code for more</title>
   
 
 
@@ -328,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/IO/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/29/题解-CF1157E-【Minimum-Array】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CSJ111">
@@ -345,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">IO
+          <h1 class="post-title" itemprop="name headline">题解 CF1157E 【Minimum Array】
 
               
             
@@ -371,24 +371,12 @@
                 
               
 
-              <time title="创建时间：2019-04-03 13:53:49" itemprop="dateCreated datePublished" datetime="2019-04-03T13:53:49+08:00">2019-04-03</time>
+              <time title="创建时间：2019-04-29 07:27:13 / 修改时间：07:28:47" itemprop="dateCreated datePublished" datetime="2019-04-29T07:27:13+08:00">2019-04-29</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-07 14:55:15" itemprop="dateModified" datetime="2019-05-07T14:55:15+08:00">2019-05-07</time>
               
             
           </span>
@@ -429,10 +417,15 @@
       
 
       
-        <p>读优输优</p>
+        <p>题目描述</p>
+<p>给定两个长度为n的序列a和b，可以对b进行任意顺序变换，得到序列c.</p>
+<p>对于序列c，ci=(ai+bi)%n</p>
+<p>求得字典序最小的c序列方案。</p>
 <a id="more"></a>
-<h1 id="fread"><a href="#fread" class="headerlink" title="fread"></a>fread</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> L=<span class="number">1000000</span>;</span><br><span class="line"><span class="keyword">char</span> *p1,*p2,ppp[L];</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">char</span> <span class="title">gc</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p1==p2)</span><br><span class="line">    &#123;</span><br><span class="line">        p2=(p1=ppp)+fread(ppp,<span class="number">1</span>,L,<span class="built_in">stdin</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> *p1++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="读优输优"><a href="#读优输优" class="headerlink" title="读优输优"></a>读优输优</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">read</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">char</span> ch=getchar();</span><br><span class="line">    <span class="keyword">int</span> pd=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(ch&lt;<span class="string">'0'</span>||ch&gt;<span class="string">'9'</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(ch==<span class="string">'-'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            pd=-pd;</span><br><span class="line">        &#125;</span><br><span class="line">        ch=getchar();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(ch&lt;=<span class="string">'9'</span>&amp;&amp;ch&gt;=<span class="string">'0'</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        x=x*<span class="number">10</span>+ch-<span class="string">'0'</span>;</span><br><span class="line">        ch=getchar();</span><br><span class="line">    &#125;</span><br><span class="line">    x*=pd;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">write</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> f[<span class="number">100001</span>];</span><br><span class="line">    <span class="keyword">int</span> s=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> tmp=x;</span><br><span class="line">    <span class="keyword">if</span>(tmp==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">putchar</span>(<span class="string">'0'</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(tmp&lt;<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp=-tmp;</span><br><span class="line">        <span class="built_in">putchar</span>(<span class="string">'-'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(tmp&gt;<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        f[s++]=tmp%<span class="number">10</span>+<span class="string">'0'</span>;</span><br><span class="line">        tmp/=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(s&gt;<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">putchar</span>(f[--s]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>对于ai（ai&gt;0）,最优的肯定是n-ai,对于ai=0的情况，最优的肯定是0,（<del>废话</del>）</p>
+<p>既然要求字典序最小，那就是贪心了啦，对于任意ai找到&gt;=最优情况的一个数就行了，</p>
+<p>最方便的就是multiset。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> big=<span class="number">0x7fffffff</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">read</span><span class="params">(<span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	x=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">char</span> ch=getchar();</span><br><span class="line">	<span class="keyword">int</span> pd=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(ch&lt;<span class="string">'0'</span>||ch&gt;<span class="string">'9'</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(ch==<span class="string">'-'</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			pd=-pd;</span><br><span class="line">		&#125;</span><br><span class="line">		ch=getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(ch&gt;=<span class="string">'0'</span>&amp;&amp;ch&lt;=<span class="string">'9'</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		x=x*<span class="number">10</span>+ch-<span class="string">'0'</span>;</span><br><span class="line">		ch=getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	x*=pd;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">write</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">char</span> ggg[<span class="number">10001</span>];</span><br><span class="line">	<span class="keyword">int</span> s=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> tmp=x;</span><br><span class="line">	<span class="keyword">if</span>(tmp==<span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">putchar</span>(<span class="string">'0'</span>);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(tmp&lt;<span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		tmp=-tmp;</span><br><span class="line">		<span class="built_in">putchar</span>(<span class="string">'-'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(tmp&gt;<span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		ggg[s++]=tmp%<span class="number">10</span>+<span class="string">'0'</span>;</span><br><span class="line">		tmp/=<span class="number">10</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span>(s&gt;<span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">putchar</span>(ggg[--s]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n,a[<span class="number">2000001</span>],len;</span><br><span class="line"><span class="keyword">int</span> f[<span class="number">1001</span>];</span><br><span class="line"><span class="keyword">int</span> l,r;</span><br><span class="line"><span class="keyword">int</span> ans[<span class="number">1000001</span>];</span><br><span class="line"><span class="built_in">multiset</span>&lt;<span class="keyword">int</span>&gt;s;</span><br><span class="line"><span class="built_in">multiset</span>&lt;<span class="keyword">int</span>&gt;::iterator it;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	read(n);</span><br><span class="line">	s.insert(big);</span><br><span class="line">	s.insert(-big);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">register</span> <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		read(a[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">register</span> <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> xx;</span><br><span class="line">		read(xx);</span><br><span class="line">		s.insert(xx);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">register</span> <span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> fi=a[i]==<span class="number">0</span>?<span class="number">0</span>:n-a[i];</span><br><span class="line">		it=s.lower_bound(fi);</span><br><span class="line">		<span class="keyword">int</span> now=*it;</span><br><span class="line">		<span class="keyword">if</span>(now==big)</span><br><span class="line">		&#123;</span><br><span class="line">			it=s.lower_bound(<span class="number">0</span>);</span><br><span class="line">			now=*it;</span><br><span class="line">		&#125;</span><br><span class="line">		s.erase(it);</span><br><span class="line">		write((now+a[i])%n);</span><br><span class="line">		<span class="built_in">putchar</span>(<span class="string">' '</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -455,7 +448,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/杂项/" rel="tag"># 杂项</a>
+            <a href="/tags/题解/" rel="tag"># 题解</a>
           
         </div>
       
@@ -468,8 +461,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/02/题解-P2880-【-USACO07JAN-平衡的阵容Balanced-Lineup】/" rel="next" title="题解 P2880 【[USACO07JAN]平衡的阵容Balanced Lineup】">
-                <i class="fa fa-chevron-left"></i> 题解 P2880 【[USACO07JAN]平衡的阵容Balanced Lineup】
+              <a href="/2019/04/23/题解-CF875C-【National-Property】/" rel="next" title="题解 CF875C 【National Property】">
+                <i class="fa fa-chevron-left"></i> 题解 CF875C 【National Property】
               </a>
             
           </div>
@@ -477,10 +470,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/03/高精度/" rel="prev" title="高精度">
-                高精度 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -618,7 +607,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#fread"><span class="nav-number">1.</span> <span class="nav-text">fread</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#读优输优"><span class="nav-number">2.</span> <span class="nav-text">读优输优</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-number">1.</span> <span class="nav-text">分析</span></a></li></ol></div>
             
 
           </div>
