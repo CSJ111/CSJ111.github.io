@@ -78,7 +78,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://csj111.github.io/tags/notes/"/>
+    <link rel="canonical" href="https://csj111.github.io/2019/06/18/题解 cf232a cycles/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -86,14 +86,17 @@
     
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://csj111.github.io/tags/Notes/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="题解 CF232A Cycles">
+<meta property="og:url" content="https://csj111.github.io/2019/06/18/%E9%A2%98%E8%A7%A3%20CF232A%20Cycles/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://csj111.github.io/images/redefine-og.webp">
+<meta property="article:published_time" content="2019-06-18T05:15:00.000Z">
+<meta property="article:modified_time" content="2026-03-06T00:49:05.309Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://csj111.github.io/images/redefine-og.webp">
     
@@ -107,7 +110,7 @@
     
     <title>
         
-            Tag: Notes | Aaron&#39;s Blog
+            题解 CF232A Cycles | Aaron&#39;s Blog
         
     </title>
 
@@ -167,7 +170,119 @@
     
     
     
-<meta name="generator" content="Hexo 8.1.1"></head>
+<meta name="generator" content="Hexo 8.1.1"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -260,7 +375,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/tags/"
                                         >
                                     <i class="fa-solid fa-tags fa-fw"></i>
@@ -405,7 +520,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/tags/"
                         >
                             <span>
@@ -512,58 +627,141 @@
 			
 
 			<div class="main-content">
-				<div class="page-template-container">
-	
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-	
-	<div class="tag-name">
-    <i class="fa-solid fa-tag"></i>&nbsp;Notes
-</div>
-<div class="tag-post-list">
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">题解 CF232A Cycles</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] shrink-0 rounded-medium border border-border-color p-px">
+				<img src="/images/avatar.png">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">陈世君</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2019-06-18 01:15</span>
+        <span class="mobile">2019-06-18 01:15</span>
+        <span class="hover-info">Created</span>
+    </span>
     
-<div class="archive-list-container">
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2026-03-05 19:49:05</span>
+            <span class="mobile">2026-03-05 19:49:05</span>
+            <span class="hover-info">Updated</span>
+        </span>
     
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2026</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
-            </div>
-            
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
                 
-                    
-                    
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='03-04'>
-                    
-                    <a href="/2026/03/04/%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%AE%B0/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">博客小记</span>
-                    </a>
-                    
+                    <li>
+                        <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>&nbsp;
+                    </li>
                 
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
-</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h2 id="题意">题意</h2>
+<p>给定一个数M，让你输出一个以邻接矩阵形式的图 ，使得图里的三元环的个数等于M.</p>
+<h1>分析</h1>
+<p>首先我们知道，完全图任意两个点都能互相到达，那么图里的三元环的个数就是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.816ex;" xmlns="http://www.w3.org/2000/svg" width="3.493ex" height="2.913ex" role="img" focusable="false" viewBox="0 -927 1543.9 1287.5"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mrow"><g data-mml-node="TeXAtom" data-mjx-texclass="OPEN"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="28" d="M152 251Q152 646 388 850H416Q422 844 422 841Q422 837 403 816T357 753T302 649T255 482T236 250Q236 124 255 19T301 -147T356 -251T403 -315T422 -340Q422 -343 416 -349H388Q359 -325 332 -296T271 -213T212 -97T170 56T152 251Z"></path></g></g><g data-mml-node="mfrac" transform="translate(458,0)"><g data-mml-node="mi" transform="translate(0,444) scale(0.707)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="mn" transform="translate(137.2,-345) scale(0.707)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="CLOSE" transform="translate(1085.9,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="29" d="M305 251Q305 -145 69 -349H56Q43 -349 39 -347T35 -338Q37 -333 60 -307T108 -239T160 -136T204 27T221 250T204 473T160 636T108 740T60 807T35 839Q35 850 50 850H56H69Q197 743 256 566Q305 425 305 251Z"></path></g></g></g></g></g></svg></mjx-container> 那么我们先预处理出组合数，然后先找到最大的 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.816ex;" xmlns="http://www.w3.org/2000/svg" width="3.493ex" height="2.913ex" role="img" focusable="false" viewBox="0 -927 1543.9 1287.5"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mrow"><g data-mml-node="TeXAtom" data-mjx-texclass="OPEN"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="28" d="M152 251Q152 646 388 850H416Q422 844 422 841Q422 837 403 816T357 753T302 649T255 482T236 250Q236 124 255 19T301 -147T356 -251T403 -315T422 -340Q422 -343 416 -349H388Q359 -325 332 -296T271 -213T212 -97T170 56T152 251Z"></path></g></g><g data-mml-node="mfrac" transform="translate(458,0)"><g data-mml-node="mi" transform="translate(0,444) scale(0.707)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path></g><g data-mml-node="mn" transform="translate(137.2,-345) scale(0.707)"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="CLOSE" transform="translate(1085.9,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="29" d="M305 251Q305 -145 69 -349H56Q43 -349 39 -347T35 -338Q37 -333 60 -307T108 -239T160 -136T204 27T221 250T204 473T160 636T108 740T60 807T35 839Q35 850 50 850H56H69Q197 743 256 566Q305 425 305 251Z"></path></g></g></g></g></g></svg></mjx-container> 减去个数。</p>
+<p>接下来我们就开始一个个加点，对于任意一个加的点，如果这个点与j个完全图里的点相连，那么这个加的点就会产生 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.791ex;" xmlns="http://www.w3.org/2000/svg" width="2.872ex" height="2.86ex" role="img" focusable="false" viewBox="0 -914.5 1269.6 1264"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mrow"><g data-mml-node="TeXAtom" data-mjx-texclass="OPEN"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="28" d="M152 251Q152 646 388 850H416Q422 844 422 841Q422 837 403 816T357 753T302 649T255 482T236 250Q236 124 255 19T301 -147T356 -251T403 -315T422 -340Q422 -343 416 -349H388Q359 -325 332 -296T271 -213T212 -97T170 56T152 251Z"></path></g></g><g data-mml-node="mfrac" transform="translate(458,0)"><g data-mml-node="mi" transform="translate(31.1,447.1) scale(0.707)"><path data-c="1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></g><g data-mml-node="mn" transform="translate(0,-348.1) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="CLOSE" transform="translate(811.6,0)"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="29" d="M305 251Q305 -145 69 -349H56Q43 -349 39 -347T35 -338Q37 -333 60 -307T108 -239T160 -136T204 27T221 250T204 473T160 636T108 740T60 807T35 839Q35 850 50 850H56H69Q197 743 256 566Q305 425 305 251Z"></path></g></g></g></g></g></svg></mjx-container> 的贡献，那么我们就可以不断最大的符合条件的j，并减去。</p>
+<h2 id="复杂度">复杂度</h2>
+<p>由于第二列的组合数在100左右时上下差值还是100,也就是说我们找的次数不会超过10次，复杂度是常数级别。</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">#define min(a,b) (a&lt;b?a:b)</span><br><span class="line">#define max(a,b) (a&gt;b?a:b)</span><br><span class="line">#define int long long </span><br><span class="line">using namespace std;</span><br><span class="line">const int L=1e6+233;</span><br><span class="line">char *p1,*p2,ppp[L];</span><br><span class="line">inline char gc()</span><br><span class="line">{</span><br><span class="line">	if(p1==p2)</span><br><span class="line">	{</span><br><span class="line">		p2=(p1=ppp)+fread(ppp,1,L,stdin);</span><br><span class="line">	}</span><br><span class="line">	return *p1++;</span><br><span class="line">}</span><br><span class="line">inline void read(int &amp;x)</span><br><span class="line">{</span><br><span class="line">    x=0;int pd=1;char ch=getchar();</span><br><span class="line">    while(ch&lt;'0'||ch&gt;'9'){if(ch=='-')pd=-pd;ch=getchar();}</span><br><span class="line">    while(ch&gt;='0'&amp;&amp;ch&lt;='9'){x=x*10+ch-'0';ch=getchar();}</span><br><span class="line">    x*=pd;</span><br><span class="line">}</span><br><span class="line">inline void write(const int &amp;x)</span><br><span class="line">{</span><br><span class="line">    int s=0;int tmp=x;if(tmp==0){putchar('0');return;}</span><br><span class="line">    if(tmp&lt;0)tmp=-tmp,putchar('-');</span><br><span class="line">    char ggg[20];while(tmp&gt;0){ggg[s++]=tmp%10+'0',tmp/=10;}</span><br><span class="line">    while(s&gt;0)putchar(ggg[--s]);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">int c[1010][1010];</span><br><span class="line">int now,n;</span><br><span class="line"></span><br><span class="line">int cnt,mp[110][110];</span><br><span class="line"></span><br><span class="line">signed main()</span><br><span class="line">{</span><br><span class="line">	for(register int i=0;i&lt;=100;++i)</span><br><span class="line">	{</span><br><span class="line">		c[i][0]=1;</span><br><span class="line">		for(register int j=1;j&lt;=3;++j)</span><br><span class="line">		{</span><br><span class="line">			c[i][j]=c[i-1][j]+c[i-1][j-1];</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	read(n);</span><br><span class="line">	for(register int i=1;i&lt;=100;++i)</span><br><span class="line">	{</span><br><span class="line">		if(c[i][3]&gt;n)</span><br><span class="line">		{</span><br><span class="line">			now=i-1;</span><br><span class="line">			break;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	n-=c[now][3];</span><br><span class="line">	cnt=now+1;</span><br><span class="line">	for(register int i=1;i&lt;=now;++i)</span><br><span class="line">	{</span><br><span class="line">		for(register int j=1;j&lt;=now;++j)</span><br><span class="line">		{</span><br><span class="line">			if(i!=j)</span><br><span class="line">			{</span><br><span class="line">				mp[i][j]=1;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	if(!n)</span><br><span class="line">	{</span><br><span class="line">		cout&lt;&lt;now&lt;&lt;endl;</span><br><span class="line">		for(register int i=1;i&lt;=now;++i)</span><br><span class="line">		{</span><br><span class="line">			for(register int j=1;j&lt;=now;++j)</span><br><span class="line">			{</span><br><span class="line">				write(mp[i][j]);</span><br><span class="line">			}</span><br><span class="line">			puts("");</span><br><span class="line">		}</span><br><span class="line">		return 0; </span><br><span class="line">	}</span><br><span class="line">	while(1)</span><br><span class="line">	{</span><br><span class="line">		for(register int i=1;i&lt;=100;++i)</span><br><span class="line">		{</span><br><span class="line">			if(c[i][2]&gt;n)</span><br><span class="line">			{</span><br><span class="line">				now=i-1;</span><br><span class="line">				break;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">		n-=c[now][2];</span><br><span class="line">		for(register int i=1;i&lt;=now;++i)</span><br><span class="line">		{</span><br><span class="line">			mp[cnt][i]=mp[i][cnt]=1;</span><br><span class="line">		}</span><br><span class="line">		if(!n)</span><br><span class="line">		{</span><br><span class="line">			break;</span><br><span class="line">		}</span><br><span class="line">		else </span><br><span class="line">		{</span><br><span class="line">			++cnt;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	cout&lt;&lt;cnt&lt;&lt;endl;</span><br><span class="line">	for(register int i=1;i&lt;=cnt;++i)</span><br><span class="line">	{</span><br><span class="line">		for(register int j=1;j&lt;=cnt;++j)</span><br><span class="line">		{</span><br><span class="line">			write(mp[i][j]);</span><br><span class="line">		}</span><br><span class="line">		puts("");</span><br><span class="line">	}</span><br><span class="line">	return 0;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+
+		</div>
+
+		
+
+		
+		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+			
+			<li class="tag-item mx-0.5">
+				<a href="/tags/%E9%A2%98%E8%A7%A3/">#题解</a>&nbsp;
+			</li>
+			
+		</ul>
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="prev" rel="prev" href="/2026/03/04/%E5%8D%9A%E5%AE%A2%E5%B0%8F%E8%AE%B0/">
+					<span class="left arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-left"></i>
+					</span>
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item truncate max-w-48">博客小记</span>
+						<span class="post-nav-item">Prev posts</span>
+					</span>
+				</a>
+			</div>
+			
+			
+		</div>
+		
+
+
+		
+	</div>
+
 	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">题解 CF232A Cycles</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E6%84%8F"><span class="nav-text">题意</span></a></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="nav-text">复杂度</span></a></li></ol></li></ol>
 
-	<div class="page-template-content markdown-body">
-		
-
-		
-	</div>
-
-	<div class="page-template-comments">
-		
 	</div>
 </div>
-
-<div class="paginator">
-	<span class="page-number current">1</span>
+	</div>
+	
 </div>
-  
+
 			</div>
 
 			
@@ -641,6 +839,22 @@
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
@@ -765,6 +979,7 @@
         }),
     );
 </script>
+
 
 
 
